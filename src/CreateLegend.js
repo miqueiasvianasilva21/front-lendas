@@ -12,13 +12,13 @@ function CreateLegend() {
   const CriarLenda = (values) => {
     const formData = new FormData();
     formData.append('titulo', values.titulo);
-    formData.append('imagem', values.imagem); // Usando o mesmo nome do campo do formulário
+    formData.append('imagem', values.imagem); 
     formData.append('descricao', values.descricao);
     formData.append('historia', values.historia);
   
     Axios.post("https://lendas-server.vercel.app/create_legend", formData, {
       headers: {
-        'Content-Type': 'multipart/form-data', // Defina o cabeçalho apropriado
+        'Content-Type': 'multipart/form-data', 
       },
     })
       .then((response) => {
