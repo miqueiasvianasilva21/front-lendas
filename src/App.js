@@ -56,7 +56,7 @@ function App() {
          </Form>
   </Formik> */}
 
-      <h1>Cadastro</h1>
+      <h1>Cadastre-se</h1>
 
       <Formik initialValues={{}}
       onSubmit={handleClickRegister} validationSchema={validationRegister}>
