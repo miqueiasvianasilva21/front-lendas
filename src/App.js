@@ -10,7 +10,7 @@ function App() {
   const handleClickRegister = (values) => Axios.post("https://lendas-server.vercel.app/adduser",{
     nome: values.nome,
     email: values.email,
-    password:values.password,
+    senha:values.senha,
   }).then((response)=>{
     console.log(response)
     navigate(`/welcome/${values.nome}`);
